@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block inherit %}
+
+<div class="jumbotron" style='background-color: white;'>
+  <div class="container">
+    <div class='col-sm-8'>
+
+      <h2>Welcome to My Simple Django Demo Project</h2>
+      <p>This Project has the Technical Interview's Questions. This project has developed using Django-1.9. The contains of in this project from www.indiabix.com, www.javatpoint.com and other sites.</p>
+      <h3><u>About Me</u></h3>
+      <h4>Shiv Prakash Keshri</h4>
+      <h4>BTech - Computer Science and Engineering - 2015</h4>
+      <h4>College - Bhagalpur College of Engineering, Bhagalpur</h4>
+      <h4>Skills - Python, Django, Core Java, C</h4>
+      <h4>Contact No - +91-7870091089</h4>
+      <h4>Email-id - shivprakashkeshri@gmail.com</h4>
+      <h4>Address - Roopena Agrahara, Silk Board, Bangalore-560068</h4>
+
+    </div>
+
+    <div class='col-sm-4'>
+      <img src="{% static 'img/ShivK.png' %}" class='img-responsive img-rounded' />
+    </div>
+  </div>
+</div>
+
+
+<div class="col-sm-8 col-sm-offset-2" style="padding-top: 20px">
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="thumbnail">
+      <div class="caption">
+
+      <h3>Please Ask Any Questions or Send me your Feedback.</h3>
+      
+		<form method="POST" action="" >{% csrf_token %}
+		  {{ form|crispy }}
+	    <input type='submit' value='Submit' class='btn btn-success' />
+		</form>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="clearfix"></div>
+
+{% include "aboutme.html" %}
+
+{% endblock inherit %}

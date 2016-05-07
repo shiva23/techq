@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% load crispy_forms_tags %}
+
+{% block inherit %}
+
+  <div class="jumbotron" style='background-color: white';>
+    <div class="container" style="text-align: center;">
+      <h1>Ask Questions</h1>
+      <p>Please Ask Any questions or Send me your Feedback.</p>
+    </div>
+  </div>
+
+<div class="col-sm-8 col-sm-offset-2" style="padding-top: 20px">
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="thumbnail">
+      <div class="caption">
+      
+		<form method="POST" action="" >{% csrf_token %}
+		{{ form|crispy }}
+    <input type='submit' value='Submit' class='btn btn-success' />
+		</form>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+{% endblock inherit %}
+
+

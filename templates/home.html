@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block inherit %}
+
+
+
+	<div class="jumbotron" style='background-color: white';>
+	  <div class="container text-center">
+	    <h1>Technical Interview Questions</h1><br />
+	    <p>Technical Interview Questions and Answers. There are some popular Questions and their Answers Asked in Interviews.</p>
+	    
+	  </div>
+	</div>
+
+	<div class='col-sm-10 col-sm-offset-1'>
+
+		<div class="row" >
+		  <div class="col-sm-12">
+		    <div class="thumbnail">
+		      <div class="caption" style="min-height: 150px;" >
+
+				   
+				    <div class='col-sm-3'>
+				      <a href="/java/"><center>
+				      <img src="{% static 'img/java.png' %}" class='img-responsive' style="min-height: 80px;" />
+				      <h3>Java</h3></center>
+				      </a>
+				    </div>
+
+				    <div class='col-sm-3'>
+				      <a href="/cprog/"><center>
+				      <img src="{% static 'img/c.png' %}" class='img-responsive' style="min-height: 80px;" />
+				      <h3>C Program</h3></center>
+				      </a>
+				    </div>
+
+				    <div class='col-sm-3'>
+				      <a href="/datastructure/"><center>
+				      <img src="{% static 'img/ds.png' %}" class='img-responsive' style="min-height: 80px;" />
+				      <h3>Data Structure</h3></center>
+				      </a>
+				    </div>
+
+				    <div class='col-sm-3'>
+				      <a href="/dbms/"><center>
+				      <img src="{% static 'img/dbms.png' %}" class='img-responsive' style="min-height: 80px;" />
+				      <h3>DBMS</h3></center>
+				      </a>
+				    </div>
+		    	
+		    	</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	<div class='col-sm-10 col-sm-offset-1'>
+
+		<div class="row">
+		  <div class="col-sm-12">
+		    <div class="thumbnail">
+		      <div class="caption" style="min-height: 150px;">
+
+				    <div class='col-sm-3'>
+				      <a href="/computernetwork/"><center>
+				      <img src="{% static 'img/cn.png' %}" class='img-responsive' style="min-height: 80px;"  />
+				      <h3>Computer Network</h3></center>
+				      </a>
+				    </div>
+				    
+				    <div class='col-sm-3'>
+				      <a href="/operatingsystem/"><center>
+				      <img src="{% static 'img/os.png' %}" class='img-responsive' style="min-height: 80px;"  />
+				      <h3>Operating System</h3></center>
+				      </a>
+				    </div>
+				    
+				    <div class='col-sm-3'>
+				      <a href="/unix/"><center>
+				      <img src="{% static 'img/unix.png' %}" class='img-responsive' style="min-height: 80px;"  />
+				      <h3>Unix</h3></center>
+				      </a>
+				    </div>
+				    
+				    <div class='col-sm-3'>
+				      <a href="/comment/"><center>
+				      <img src="{% static 'img/ask.png' %}" class='img-responsive' style="min-height: 80px;"  />
+				      <h3>Ask Question</h3></center>
+				      </a>
+				    </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	</div>
+	
+<div class="clearfix"></div>
+
+
+
+	{% include "aboutme.html" %}
+
+
+{% endblock inherit %}
