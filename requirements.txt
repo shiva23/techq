@@ -9,7 +9,6 @@ wsgiref==0.1.2
 html5lib==0.999
 lxml==3.5.0
 pycrypto==2.6.1
-python-prctl==1.1.1
 pyxdg==0.25
 six==1.10.0
 unity-lens-photos==1.0
