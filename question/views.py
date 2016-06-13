@@ -3,7 +3,7 @@ from django.shortcuts import render, HttpResponseRedirect
 from django.db.models import Q
 from .models import *
 from .forms import CommentForm
-
+import requests
 
 
 def home(request):
@@ -247,3 +247,9 @@ def unixdef(request):
 	content={'obj':qs,}
 	return render(request, 'unix.html', content)
 
+
+
+def index(request):
+    r = requests.get('http://httpbin.org/status/418')
+    print r.text
+    return HttpResponse('<pre>' + r.text + '</pre>')
