@@ -11,6 +11,5 @@ lxml==3.5.0
 pycrypto==2.6.1
 pyxdg==0.25
 six==1.10.0
-unity-lens-photos==1.0
 virtualenv==15.0.1
 whitenoise==3.0
